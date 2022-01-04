@@ -14,3 +14,11 @@ type cases = [
   Expect<Equal<Includes<[{ a: 'A' }], { readonly a: 'A' }>, false>>,
   Expect<Equal<Includes<[{ readonly a: 'A' }], { a: 'A' }>, false>>,
 ]
+
+// type Is<T, U> = T extends U ? '✔' : '✖';
+// type e = Is<[true, boolean], [true, boolean]>
+
+// type Equal<T, U> = [T, U] extends [U, T] ? true : false
+
+// type Is<T, U> = U extends keyof T ? '✔' : '✖';
+// type a = Is<[true], number>

@@ -10,4 +10,6 @@ type cases = [
   Length<5>,
   // @ts-expect-error
   Length<'hello world'>,
+  // @ts-expect-error
+  Expect<Equal<Length<{length: 5}>, 5>>,
 ]
