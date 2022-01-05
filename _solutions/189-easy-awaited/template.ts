@@ -10,3 +10,4 @@ type MyAwaited<T extends Promise<unknown>> = T extends Promise<infer U>
 // type MyAwaited<T extends Promise<unknown>> = T extends Promise<infer U>
 //   ? U
 //   : never
+// type MyAwaited<T> = T extends Promise<infer U> ? MyAwaited<U> : never

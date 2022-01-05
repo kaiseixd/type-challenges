@@ -10,6 +10,8 @@ type cases = [
   Expect<Equal<1 | 2, MyReturnType<typeof fn1>>>,
 ]
 
+type a = MyReturnType<typeof fn>
+
 type ComplexObject = {
   a: [12, 'foo']
   bar: 'hello'
